@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Rk">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:maxLines="20"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="CLUB" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="W" />
+
+        <TextView
+            android:id="@+id/tvDraw"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="D" />
+
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="L" />
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_margin="6dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="T" />
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshKlasemen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKlasemen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_klasemen"
+        />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

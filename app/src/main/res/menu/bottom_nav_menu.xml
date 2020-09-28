@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/ic_schedule_black_24dp"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/navigation_league"
+        android:icon="@drawable/ic_league"
+        android:title="@string/league" />
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_favorites"
+        android:title="@string/favorite" />
+
+
+
+</menu>
